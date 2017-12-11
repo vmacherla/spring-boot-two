@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+    springboottwo:
+        container_name: spring-boot-two
+        build:
+            context: .
+        image: spring-boot-two:latest
+        volumes:
+            - /usr/log/:/usr/log
+        expose:
+            - 8080
+        ports:
+            - 8080:8080
+  
